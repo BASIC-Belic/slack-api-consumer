@@ -29,8 +29,8 @@ class SlackApiWrapper
       body:  {
         "text" => "#{message}",
         "channel" => "#{channel}",
-        "username" => "Roberts-Robit",
-        "icon_emoji" => ":robot_face:",
+        "username" => "Karis 2.0",
+        "icon_emoji" => ":karis:",
         "as_user" => "false"
       },
       :headers => { 'Content-Type' => 'application/x-www-form-urlencoded' }
