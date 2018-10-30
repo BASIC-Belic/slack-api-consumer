@@ -77,5 +77,9 @@ group :test do
   gem 'minitest-reporters'
 end
 
+group :development do
+  dotenv-rails
+end
+
 gem 'httparty'
 gem 'bootstrap', '~> 4.1.3'
