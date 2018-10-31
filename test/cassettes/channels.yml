@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://slack.com/api/chat.postMessage?token=xoxp-366868992886-382789542802-466099082017-92dbb6161c762d547354fa20797fc68e
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
     body:
       encoding: UTF-8
       string: text=how%20many%20times%20does%20this%20actually%20send%20to%20the%20internet&channel=edges-api-testing&username=Karis%202.0&icon_emoji=%3Akaris%3A&as_user=false
@@ -21,75 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 31 Oct 2018 18:01:41 GMT
-      Server:
-      - Apache
-      X-Slack-Router:
-      - p
-      X-Slack-Req-Id:
-      - 8b8d4f8b-4f96-42fb-8c63-5f55b016f7b6
-      X-Oauth-Scopes:
-      - read,client,identify,post,apps
-      X-Accepted-Oauth-Scopes:
-      - chat:write:bot,post
-      Expires:
-      - Mon, 26 Jul 1997 05:00:00 GMT
-      Cache-Control:
-      - private, no-cache, no-store, must-revalidate
-      Vary:
-      - Accept-Encoding
-      Pragma:
-      - no-cache
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Slack-Exp:
-      - '1'
-      X-Slack-Backend:
-      - h
-      Referrer-Policy:
-      - no-referrer
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Via:
-      - haproxy-www-xnir
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 6a1e4dd9fa29c61c4b71a53d6bf94267.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - swr_S8oRQdQ0RauOrtb4w4oe0X2Rkp7sq54zkP1gpKzqVgo7fCRoFw==
-    body:
-      encoding: UTF-8
-      string: '{"ok":true,"channel":"CDK8R2QUR","ts":"1541008901.000600","message":{"text":"how
-        many times does this actually send to the internet","username":"Karis 2.0","icons":{"emoji":":karis:"},"bot_id":"BDPUFQDNC","type":"message","subtype":"bot_message","ts":"1541008901.000600"}}'
-    http_version: 
-  recorded_at: Wed, 31 Oct 2018 18:01:41 GMT
-- request:
-    method: post
-    uri: https://slack.com/api/chat.postMessage?token=xoxp-366868992886-382789542802-466099082017-92dbb6161c762d547354fa20797fc68e
-    body:
-      encoding: UTF-8
-      string: text=test%20message&channel=this-channel-does-not-exist&username=Karis%202.0&icon_emoji=%3Akaris%3A&as_user=false
-    headers:
-      Content-Type:
-      - application/x-www-form-urlencoded
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Wed, 31 Oct 2018 18:15:34 GMT
+      - Wed, 31 Oct 2018 18:25:03 GMT
       Server:
       - Apache
       Vary:
@@ -105,7 +37,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Slack-Req-Id:
-      - 14611280-33b3-464b-ba3f-4b9c0c4a40d1
+      - bc94099a-1c95-408e-a84d-531f7bfeab94
       X-Xss-Protection:
       - '0'
       X-Content-Type-Options:
@@ -113,16 +45,16 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Via:
-      - haproxy-www-fg05
+      - haproxy-www-rju6
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 36fbf419b5fa237613e1567ab33d3698.cloudfront.net (CloudFront)
+      - 1.1 86412f0e9b1a62db53e7827b691fda1b.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - hwuCVxyU-ubkPdzRaEvSJAK8pZQQWfhPDnksBZudhVKykaIZ6JeKvw==
+      - p0-v3JIq_9p5dXUftHA8wk0pqQfCoUCWyaIQOGZ01dEqIcoQ9ficbg==
     body:
       encoding: UTF-8
       string: '{"ok":false,"error":"token_revoked"}'
     http_version: 
-  recorded_at: Wed, 31 Oct 2018 18:15:34 GMT
+  recorded_at: Wed, 31 Oct 2018 18:25:03 GMT
 recorded_with: VCR 4.0.0
