@@ -23,5 +23,14 @@ describe 'Slack Api Wrapper' do
       # is_successful = #something
       # expect(is_successful).must_equal true
     end
+
+    it 'is successful when sending a mesage to fake channel' do
+      VCR.use_cassette("channels") do
+        message = "test message"
+        is_successful = SlackApiWrapper.send_message("this-channel-does-not-exist", message)
+        expect(is_successful).must_equal true
+      end
+    end
+    
   end
 end

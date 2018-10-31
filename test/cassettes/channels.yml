@@ -68,4 +68,61 @@ http_interactions:
         many times does this actually send to the internet","username":"Karis 2.0","icons":{"emoji":":karis:"},"bot_id":"BDPUFQDNC","type":"message","subtype":"bot_message","ts":"1541008901.000600"}}'
     http_version: 
   recorded_at: Wed, 31 Oct 2018 18:01:41 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=xoxp-366868992886-382789542802-466099082017-92dbb6161c762d547354fa20797fc68e
+    body:
+      encoding: UTF-8
+      string: text=test%20message&channel=this-channel-does-not-exist&username=Karis%202.0&icon_emoji=%3Akaris%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 18:15:34 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      X-Slack-Router:
+      - p
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Slack-Req-Id:
+      - 14611280-33b3-464b-ba3f-4b9c0c4a40d1
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-fg05
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 36fbf419b5fa237613e1567ab33d3698.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hwuCVxyU-ubkPdzRaEvSJAK8pZQQWfhPDnksBZudhVKykaIZ6JeKvw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"token_revoked"}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 18:15:34 GMT
 recorded_with: VCR 4.0.0
