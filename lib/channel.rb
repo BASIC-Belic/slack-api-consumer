@@ -12,4 +12,5 @@ class Channel
     @is_general = options[:is_archived]
     @members = options[:members]
   end
+
 end
